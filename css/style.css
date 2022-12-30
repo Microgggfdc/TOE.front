@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #ffffff;
+  }
+  
+  .logo {
+    margin-right: auto;
+    text-decoration: none;
+    color: #000000;
+    font-size: 25px;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+  }
+
+  .logo:hover {
+    color: coral;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #00a9a1;
+  }
+  
+  .cta {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  /* Mobile Nav */
+  
+  .menu {
+    display: none;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #a0a0a0;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .main {
+      display: initial;
+    }
+  }
+
+/* General Desc*/
+.e1_6 {
+
+  background-color: rgba(255, 255, 255, 1);
+  width: 1440px;
+  height: 1024px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+}
+
+.cube {
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  transform: rotate(13.63515947681712deg);
+  background-image: linear-gradient(0deg, rgba(255, 77.00000301003456, 80.00000283122063, 0.75) 0%,rgba(232.68750607967377, 46.53750121593475, 46.53750121593475, 0.7300000190734863) 0.009999999747378752%,rgba(226.0000017285347, 114.99996274709702, 66.9999960064888, 0.9800000190734863) 100%);
+  width: 662.4811401367188px;
+  height: 667.190673828125px;
+  position: absolute;
+  left: -161.71746826171875px;
+  top: 69px;
+  border-radius: 57px;
+}
+
+.brain {
+
+  transform: rotate(30deg);
+  width: 495;
+  height: 456;
+  position: absolute;
+  left: -188px;
+  top: 300;
+  border-top-left-radius: 97px;
+  border-top-right-radius: 97px;
+  border-bottom-left-radius: 97px;
+  border-bottom-right-radius: 97px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-name-game {
+
+  color: rgba(0, 0, 0, 1);
+  width: 776px;
+  height: 94px;
+  position: absolute;
+  left: 622px;
+  top: 321.85546875px;
+  font-family: Rubik;
+  text-align: left;
+  font-size: 40px;
+  letter-spacing: 0;
+}
+
+.text-desc{
+  color: rgba(0, 0, 0, 1);
+  width: 473px;
+  height: 57px;
+  position: absolute;
+  left: 622px;
+  top: 429px;
+  font-family: Rubik;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.butn-down {
+  display: inline-block;
+	padding: 10px 35px;
+	font-size: 18px;
+  background-color: #ffc107;
+  width: 260px;
+  height: 47px;
+  position: absolute;
+  left: 714px;
+  top: 500.85546875px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-transform: uppercase;
+	border-radius: 15px;
+	font-weight: 700;
+  transition: all 0.5s ease 0s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+  border: none;
+}
+
+.butn-down:hover{
+  box-shadow: 0 8px 10px rgba(255, 193, 7, .9);
+	transform: scale(1.1);
+}
